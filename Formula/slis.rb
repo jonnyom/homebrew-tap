@@ -1,15 +1,15 @@
 class Slis < Formula
   desc "Multi-repo worktree cockpit: a TUI + CLI for working across many git repos at once"
   homepage "https://github.com/jonnyom/slis"
-  version "0.7.1"
+  version "0.7.2"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/jonnyom/slis/releases/download/v#{version}/slis_#{version}_darwin_arm64.tar.gz"
-      sha256 "240fcb64fe108b4fbb0c18add330e0187164ce7dee0d53d19579b154b2de2408"
+      sha256 "29310d42d4164a5d25d3d13ab3de4f2b2a99e06e0dffadec2bb9c26f1007ecfa"
     else
       url "https://github.com/jonnyom/slis/releases/download/v#{version}/slis_#{version}_darwin_amd64.tar.gz"
-      sha256 "3babea86eb5706446e52de677865d5cd34c06d8b2e7c788dedf96b34348c820b"
+      sha256 "bfdc1b72f87670514464e108bd90939ea6a90607d53eb12442f7fac8fe9d3096"
     end
     depends_on "terminal-notifier"
   end
@@ -17,10 +17,10 @@ class Slis < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/jonnyom/slis/releases/download/v#{version}/slis_#{version}_linux_arm64.tar.gz"
-      sha256 "ed7600b2d1d2988f5694fec950e56ade4491028c00bbd3141f625df46e5d0106"
+      sha256 "28f0314ac4d138f10f8aed68c1dd4f0f3281cf28917bcb4028863ae0f0fd7a86"
     else
       url "https://github.com/jonnyom/slis/releases/download/v#{version}/slis_#{version}_linux_amd64.tar.gz"
-      sha256 "6bf530303e44d2ef8c5d32886888d48c11f9ad2f876da5cf0b9d0aa69beeaf29"
+      sha256 "f00b5394b8acb368f79cbee1258f8db3af61709af9fdc85893e7178ad8ceabb8"
     end
   end
 
